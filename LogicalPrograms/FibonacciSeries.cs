@@ -8,7 +8,7 @@ namespace LogicalPrograms
 {
     public class FibonacciSeries
     {
-        public void FindFibonacciSeries()
+        public static void FindFibonacciSeries()
         {
             int n1 = 0, n2 = 1, n3, i, number;
             Console.Write("Enter the number of elements in FibonacciSeries: ");
