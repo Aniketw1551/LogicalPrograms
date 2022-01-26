@@ -22,7 +22,8 @@ namespace LogicalPrograms
             while (CONTINUE)
             {
                 Console.WriteLine("Choose your option");
-                Console.WriteLine("1.FibonacciSeries 2.Perfect Number 3.Prime Number 0.Exit");
+                Console.WriteLine("1.FibonacciSeries 2.Perfect Number 3.Prime Number 4.Reverse Number");
+                Console.WriteLine("5.CouponNumber 6.StopWatch 0.Exit");
                 int Choose = int.Parse(Console.ReadLine());
                 switch (Choose)
                 {
@@ -32,10 +33,21 @@ namespace LogicalPrograms
                         case 2:
                         PerfectNumber.FindPerfectNumber();
                         break;
-                       case 3:
+                        case 3:
                        PrimeNumber.TakingInput();
                         break;
-                       case 0:
+                        case 4:
+                        ReverseNumber.GetRevNumber();
+                        break;
+                        case 5:
+                        CouponNumbers couponNumbers = new CouponNumbers();
+                        int count = couponNumbers.GenerateDistinctCoupon();
+                        Console.WriteLine("No of Distinct Coupons Generated: " + count);
+                        break;
+                        case 6:
+                        StopWatch.GetElapsedTime();
+                        break;
+                        case 0:
                         break;
 
                     default:
